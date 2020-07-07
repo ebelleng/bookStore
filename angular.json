@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bookStore"
+    }
+  },
+  "defaultProject": "bookStore",
+  "cli": {
+    "analytics": "13546eba-2be8-4b25-a136-3b3670ad6060"
+  }
 }

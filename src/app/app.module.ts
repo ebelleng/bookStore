@@ -12,9 +12,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button';
-import { LibroComponent } from './libro/libro.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { Top10productosComponent } from './top10productos/top10productos.component';
+import { LibroComponent } from './libro/libro.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 @NgModule({
@@ -22,9 +24,10 @@ import { Top10productosComponent } from './top10productos/top10productos.compone
     AppComponent,
     NavbarComponent,
     CategoriaComponent,
-    LibroComponent,
     ContactoComponent,
-    Top10productosComponent
+    Top10productosComponent,
+    LibroComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { Top10productosComponent } from './top10productos/top10productos.compone
     BrowserAnimationsModule,
     MatIconModule,
     MatSliderModule,
-    MatButtonModule
+    MatButtonModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

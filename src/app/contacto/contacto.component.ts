@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contacto',
@@ -6,10 +7,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  contacto: FormGroup;
+   submitted = false;
+   titulo = 'Contacto';
+ 
+ constructor(private formBuilder: FormBuilder) { }
+ 
+    ngOnInit() {
+        this.contacto = this.formBuilder.group({
+            nya: ['', Validators.required],            
+            email: ['', [Validators.required, Validators.email]],
+            asunto: ['', Validators.required],
+            mensaje: ['', [Validators.required, Validators.minLength(6)]]
+        });
+    }
+ 
+    get f() { return this.contacto.controls; }
+ 
+    onSubmit() {
+        this.submitted = true;
+ 
+        if (this.contacto.invalid) {
+            return;
+        }
+ 
+        alert('Mensaje Enviado !')
+    }  
 }

@@ -49,16 +49,13 @@ import { CarritoComponent } from './carrito/carrito.component';
     MatIconModule,
     MatSliderModule,
     MatButtonModule,
-<<<<<<< HEAD
-    NgbModule
-=======
+    NgbModule,
     MatSidenavModule,
-    MatListModule,
-    LayoutModule,
     MatFormFieldModule,
-    ReactiveFormsModule,
-    FormsModule
->>>>>>> refs/remotes/origin/master
+    LayoutModule,
+    MatListModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

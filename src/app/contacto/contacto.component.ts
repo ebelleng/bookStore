@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contacto',
@@ -11,7 +12,7 @@ export class ContactoComponent implements OnInit {
     submitted = false;
     titulo = 'Contacto';
  
-    constructor(private formBuilder: FormBuilder) { }
+    constructor(private formBuilder: FormBuilder, private router: Router) { }
  
     ngOnInit() {
         this.contacto = this.formBuilder.group({
@@ -32,5 +33,6 @@ export class ContactoComponent implements OnInit {
         }
  
         alert('Mensaje Enviado !')
+        this.router.navigate(['']);
     }  
 }

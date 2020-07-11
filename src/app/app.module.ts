@@ -21,6 +21,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { LayoutModule } from '@angular/cdk/layout';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { CarritoComponent } from './carrito/carrito.component';
+
 
 
 
@@ -34,6 +36,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     LibroComponent,
     ContactoComponent,
     Top10productosComponent,
+    CarritoComponent,
   ],
   imports: [
     BrowserModule,

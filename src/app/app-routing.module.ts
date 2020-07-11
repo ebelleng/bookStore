@@ -4,12 +4,14 @@ import { AppComponent } from './app.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { Top10productosComponent } from './top10productos/top10productos.component';
+import { CarritoComponent } from './carrito/carrito.component';
 
 
 const routes: Routes = [
   { path: 'categorias', component: CategoriaComponent },
   { path: 'top10', component: Top10productosComponent },
   { path: 'contacto', component: ContactoComponent },
+  { path: 'carrito', component: CarritoComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

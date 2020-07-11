@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'top10', component: Top10productosComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'carrito', component: CarritoComponent },
+  { path: 'carrito/:id', component: CarritoComponent },
   { path: 'libros', component: LibroComponent},
   { path: 'libros/:id', component: LibroComponent},
   { path: '**', redirectTo: '', pathMatch: 'full' }

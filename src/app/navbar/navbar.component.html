@@ -5,14 +5,17 @@
    
     <div class="spacer"></div>
    
-    <a mat-button-flat color="basic" > <span class="material-icons"> search </span> </a>
+    <span class="material-icons"> search </span>
+    <form class="form-inline">
+        <div class="md-form my-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </div>
+      </form>
     <a mat-button routerLink="">Inicio</a>
     <a mat-button routerLink="libros">Libros</a>
     <a mat-button routerLink="categorias">Categorias</a>
     <a mat-button routerLink="top10">Top 10 productos</a>
     <a mat-button routerLink="contacto">Contacto</a>
-    <a mat-raised-button color="primary" routerLink="carrito">
-        <span class="material-icons"> shopping_cart </span>
-    </a>
+    <a mat-raised-button color="primary" routerLink="carrito"><span class="material-icons"> shopping_cart </span></a>
     
 </mat-toolbar>

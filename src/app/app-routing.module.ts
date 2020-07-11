@@ -14,10 +14,12 @@ import { LibroComponent } from './libro/libro.component';
 const routes: Routes = [
   { path: '', component: InicioComponent},
   { path: 'categorias', component: CategoriaComponent },
+  { path: 'categorias/:categoria', component: CategoriaComponent},
   { path: 'top10', component: Top10productosComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'carrito', component: CarritoComponent },
   { path: 'libros', component: LibroComponent},
+  { path: 'libros/:id', component: LibroComponent},
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

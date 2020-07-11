@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
+import { books } from './books';
 
 
 @Component({
@@ -10,4 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class AppComponent {
   title = 'bookStore';
+
+  constructor(){ 
+  }
 }

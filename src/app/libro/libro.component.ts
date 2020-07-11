@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
 import { books } from '../books';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-libro',
@@ -9,9 +9,13 @@ import { books } from '../books';
 })
 export class LibroComponent implements OnInit {
   books=books;
-  
+  id: Number;
+  book: any;
 
-  constructor() { }
+  constructor(private _route: ActivatedRoute) { 
+    this.id = +this._route.snapshot.paramMap.get('id');
+    this.book = books.find(x => x.id == this.id);
+  }
 
   ngOnInit(): void {
   }

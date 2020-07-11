@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3">
+            <nav class="nav flex-column" *ngFor="let categoria of listaCategorias">
+              <a class="list-group-item" href="/categorias/{{ categoria }}">{{ categoria }}</a>
+            </nav>
+          </div>
+        <div class="col-sm-9">
+            <div class="container-fluid">
+                <div id="row1" class="row" *ngFor="let book of listaLibros">
+                    <div class="col-xs-3 col-md-3">
+                         <img src="../../{{book.imagen}}" class="img-thumbnail libro" alt="libro">
+                    </div>
+                    <div class="col-xs-9 col-md-9 detalle">
+                     <ul class="list-group">
+                         <li class="list-group-item">Nombre: {{book.nombre}}</li>
+                         <li class="list-group-item">Genero: {{book.genero}}</li>
+                         <li class="list-group-item">Autor: {{book.autor}}</li>
+                         <li class="list-group-item">Numero de paginas: {{book.numero_de_paginas}}</li>
+                         <li class="list-group-item">Precio: {{book.precio}}</li>
+                         <li class="list-group-item">Descripción: {{book.description}}</li>
+                       </ul>
+                       <a mat-raised-button color="primary" class="btn"> Comprar </a>
+                       <a mat-raised-button color="primary" class="btn">Agregar al carro <span class="material-icons"> shopping_cart </span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

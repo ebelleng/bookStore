@@ -7,6 +7,8 @@ import { Top10productosComponent } from './top10productos/top10productos.compone
 import { CarritoComponent } from './carrito/carrito.component';
 
 
+
+
 const routes: Routes = [
   { path: 'categorias', component: CategoriaComponent },
   { path: 'top10', component: Top10productosComponent },

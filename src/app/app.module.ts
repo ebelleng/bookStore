@@ -17,6 +17,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button';
+<<<<<<< HEAD
+import { ContactoComponent } from './contacto/contacto.component';
+import { Top10productosComponent } from './top10productos/top10productos.component';
+import { LibroComponent } from './libro/libro.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InicioComponent } from './inicio/inicio.component';
+=======
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -26,6 +33,7 @@ import { CarritoComponent } from './carrito/carrito.component';
 
 
 
+>>>>>>> refs/remotes/origin/master
 
 
 @NgModule({
@@ -33,10 +41,17 @@ import { CarritoComponent } from './carrito/carrito.component';
     AppComponent,
     NavbarComponent,
     CategoriaComponent,
-    LibroComponent,
     ContactoComponent,
     Top10productosComponent,
+<<<<<<< HEAD
     CarritoComponent,
+=======
+<<<<<<< HEAD
+    LibroComponent,
+    InicioComponent
+=======
+>>>>>>> refs/remotes/origin/master
+>>>>>>> 26957b372c31c489aff689f4453520ee643aa195
   ],
   imports: [
     BrowserModule,
@@ -46,12 +61,16 @@ import { CarritoComponent } from './carrito/carrito.component';
     MatIconModule,
     MatSliderModule,
     MatButtonModule,
+<<<<<<< HEAD
+    NgbModule
+=======
     MatSidenavModule,
     MatListModule,
     LayoutModule,
     MatFormFieldModule,
     ReactiveFormsModule,
     FormsModule
+>>>>>>> refs/remotes/origin/master
   ],
   providers: [],
   bootstrap: [AppComponent]

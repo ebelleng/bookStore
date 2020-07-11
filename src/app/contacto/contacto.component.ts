@@ -7,11 +7,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent implements OnInit {
-  contacto: FormGroup;
-   submitted = false;
-   titulo = 'Contacto';
+    contacto: FormGroup;
+    submitted = false;
+    titulo = 'Contacto';
  
- constructor(private formBuilder: FormBuilder) { }
+    constructor(private formBuilder: FormBuilder) { }
  
     ngOnInit() {
         this.contacto = this.formBuilder.group({

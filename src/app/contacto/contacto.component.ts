@@ -18,7 +18,7 @@ export class ContactoComponent implements OnInit {
             nya: ['', Validators.required],            
             email: ['', [Validators.required, Validators.email]],
             asunto: ['', Validators.required],
-            mensaje: ['', [Validators.required, Validators.minLength(6)]]
+            mensaje: ['', [Validators.required]]
         });
     }
  

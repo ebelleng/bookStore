@@ -14,8 +14,8 @@
                 </tr>
                 </thead>
                 <tbody>
-                        <tr *ngFor="let libro of listaLibros">
-                            <th scope="row">{{ libro.nombre}}</th>
+                        <tr *ngFor="let libro of listaLibros; index as libroId">
+                            <th scope="row"><a [routerLink]="['/libros', libroId+1]">{{ libro.nombre}}</a></th>
                             <td>{{ libro.precio }} </td>
                             <td>{{ libro.cantidad }}</td>
                             <td>

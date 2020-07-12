@@ -20,6 +20,6 @@ export class CarritoComponent implements OnInit {
   }
 
   removerLibro(book: any){
-    this.listaLibros.splice( this.listaLibros.indexOf(book) , 1);
+    this.carritoService.removerLibro(book);
   }
 }

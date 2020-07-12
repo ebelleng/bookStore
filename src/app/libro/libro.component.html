@@ -14,8 +14,7 @@
                 <li class="list-group-item">Precio: {{book.precio}}</li>
                 <li class="list-group-item">Descripción: {{book.description}}</li>
             </ul>
-            <a mat-raised-button color="primary" class="btn"> Comprar </a>
-            <a mat-raised-button color="primary" class="btn">Agregar al carro <span class="material-icons"> shopping_cart </span></a>
+            <a mat-raised-button color="primary" class="btn" (click)="agregarAlCarrito(book)">Agregar al carro <span class="material-icons"> shopping_cart </span></a>
         </div>
     </div>
     <div id="row-comentario" class="row align-items-center">
@@ -61,8 +60,7 @@
                 <li class="list-group-item">Precio: {{book.precio}}</li>
                 <li class="list-group-item">Descripción: {{book.description}}</li>
             </ul>
-            <a mat-raised-button color="primary" class="btn"> Comprar </a>
-            <a mat-raised-button color="primary" class="btn">Agregar al carro <span class="material-icons"> shopping_cart </span></a>
+            <a mat-raised-button color="primary" class="btn" (click)="agregarAlCarrito(book)">Agregar al carro <span class="material-icons"> shopping_cart </span></a>
         </div>
     </div>
     <div id="row-comentario" class="row align-items-center">

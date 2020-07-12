@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { books } from '../books';
+import { Observable } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
+import { CarritoService } from '../services/carrito.service';
 
 @Component({
   selector: 'app-carrito',
@@ -9,17 +11,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CarritoComponent implements OnInit {
   titulo = "Carrito de compras";
-  listaCarrito: { 
-    id: Number,
-    cantidad: Number
-   };
-
-  constructor(private _route: ActivatedRoute) {    
-    this.listaCarrito.id = 0;
-    this.listaCarrito.cantidad = 0;
+  listaLibros: Array<any>;
+  
+  constructor(private carritoService:CarritoService, private _route: ActivatedRoute) { }
+  
+  ngOnInit() {
+    this.listaLibros = this.carritoService.listarLibros();
   }
 
-  ngOnInit(): void {
+  removerLibro(book: any){
+    this.listaLibros.splice( this.listaLibros.indexOf(book) , 1);
   }
-
 }

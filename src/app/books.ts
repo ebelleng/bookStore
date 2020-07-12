@@ -8,7 +8,8 @@ export const books = [
     precio: 5.99,
     comentario: 'Soy un comentario',
     imagen: './assets/images/señor.jpg',
-    description: 'The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien.'
+    description: 'The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien.',
+    cantidad: 0
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ export const books = [
     precio: 15.99,
     comentario: 'Soy otro comentario',
     imagen: './assets/images/torta.png',
-    description: 'The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien.'
+    description: 'The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien.',
+    cantidad: 0
   }
 ];
   

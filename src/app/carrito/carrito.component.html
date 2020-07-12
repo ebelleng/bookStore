@@ -13,11 +13,23 @@
                     <th scope="col"></th>
                 </tr>
                 </thead>
-                <tbody >
-
+                <tbody>
+                        <tr *ngFor="let libro of listaLibros">
+                            <th scope="row">{{ libro.nombre}}</th>
+                            <td>{{ libro.precio }} </td>
+                            <td>{{ libro.cantidad }}</td>
+                            <td>
+                                <a mat-raised-button color="primary" class="btn" (click)='removerLibro(libro)'> Remover </a>
+                            </td>
+                          </tr>
+                          <tr>
                 </tbody>
             </table>
         </div>
       </div>
+      <div class="row">
+        <a mat-raised-button color="primary" class="btn"> Comprar </a>
+      </div>
     </div>
+
 </div>
